@@ -62,43 +62,85 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   height: 44px;
+  z-index: 100;
+  position: relative;
   .logo {
     width: 24px;
     height: 24px;
     margin: 10px 0 10px 16px;
   }
-  .menu-wrapper {
-    // .toggle {
-    //   // z-index: 999;
-    //   // cursor: pointer;
-    //   // position: absolute;
-    //   // top: 16px;
-    //   // right: 19px;
-    //   // bottom: 16px;
-    //   // opacity: 0;
-    //   // width: 18px;
-    //   // height: 12px;
-    //   // display: none;
-    // }
-    .burger {
-      // z-index: 998;
-      i {
-        // position: absolute;
-        // top: 16px;
-        // right: 19px;
-        // bottom: 16px;
-        margin: 16px 19px 16px 0;
+    .menu-wrapper {
+      display: block;
+      padding: 16px 19px 16px 0;
+      #toggle {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+        padding: 16px 19px 16px 0;
+        z-index: 2;
+      }
+      #toggle:checked~ul {
+        height: 224px;
+        background-color: $menu-color;
+      }
+      .bar {
+        display: block;
+        position: relative;
         width: 18px;
-        height: 12px;
+        height: 2px;
+        margin-bottom: 3px;
+        background-color: $font-color-1;
+        line-height: 1;
+      }
+      .bar:first-child {
+        transform-origin: 1px 1px;
+        transform-origin: 0% 0%;
+      }
+      .bar:nth-last-child(2) {
+        transform-origin: 1px 1px;
+        transform-origin: 0% 100%;
+      }
+      #toggle:checked~.bar {
+        transform-origin: 1px 1px;
+        opacity: 1;
+        transform: rotate(45deg) translate(1px, 2px);
+      }
+      #toggle:checked~.bar:nth-last-child(3) {
+        opacity: 0;
+      }
+      #toggle:checked~.bar:nth-last-child(2) {
+        transform-origin: -1px 3px;
+        transform: rotate(-45deg) translate(-2px, 4px);
       }
     }
-    .burger-menu {
-      display: none;
-      .nav-item {
-        text-decoration: none;
-      }
+    .menu {
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+
+      top: 44px;
+      height: 0px;
+      right: 0;
+      list-style: none;
+      overflow: hidden;
+        li {
+          background-color: $menu-color;
+          margin: 16px 0 8px 16px;
+          .nav-item {
+            text-decoration: none;
+            color: $font-color-2;
+            font-size: 16px;
+            display: block;
+            position: relative;
+            letter-spacing: 0;
+            line-height: 28px;
+            font-weight: normal;
+          }
+        }
     }
-  }
 }
 
 // main
@@ -269,3 +311,4 @@ footer {
     }
   }
 }
+
