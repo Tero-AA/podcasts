@@ -6,5 +6,243 @@
   border: 0;
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
+  color: #060A24;
+  background-color: #FFFFFF;
+}
+
+html {
+  line-height: 0;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 42px;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100%;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  font-weight: 500;
+  width: 288px;
+  height: 48px;
+  background-color: #00F3BB;
+}
+
+.button:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #FFFFFF;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 44px;
+}
+
+.navbar .logo {
+  width: 24px;
+  height: 24px;
+  margin: 10px 0 10px 16px;
+}
+
+.navbar .menu-wrapper .burger i {
+  margin: 16px 19px 16px 0;
+  width: 18px;
+  height: 12px;
+}
+
+.navbar .menu-wrapper .burger-menu {
+  display: none;
+}
+
+.navbar .menu-wrapper .burger-menu .nav-item {
+  text-decoration: none;
+}
+
+#main h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 0;
+  line-height: 42px;
+  margin: 29px 0 16px 16px;
+}
+
+#main h1 .line-through {
+  text-decoration: line-through;
+}
+
+#main h1 .second-line {
+  display: block;
+}
+
+#main h1 span {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+}
+
+#main p {
+  margin: 16px;
+  line-height: 22px;
+}
+
+#main .button {
+  margin: 20px 16px 24px 16px;
+}
+
+#episodes .container h2 {
+  position: relative;
+  background-color: transparent;
+  z-index: 900;
+  color: #FFFFFF;
+  margin: 64px 147px 21px 16px;
+}
+
+#episodes .container iframe {
+  position: relative;
+  background-color: transparent;
+  margin: 0 11px 11px 11px;
+  width: 298px;
+  height: 232px;
+}
+
+.bg-skew {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  width: 100%;
+  height: 1203.5px;
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  position: absolute;
+  top: 371px;
+}
+
+#about .container img {
+  width: 360px;
+  height: 519px;
+  position: relative;
+  top: 37px;
+  left: -20px;
+  text-align: center;
+  background-color: transparent;
+}
+
+#about .container .about h2 {
+  margin: 0px 16px 8px;
+  padding-top: 27px;
+}
+
+#about .container .about p {
+  letter-spacing: 0;
+  line-height: 22px;
+  margin: 8px 16px 54px;
+}
+
+#interviews .container h2 {
+  margin: 0 16px 14px;
+}
+
+#interviews .container img {
+  width: 320px;
+  height: 243px;
+}
+
+#topics .container h2 {
+  margin: 48px 16px 24px;
+}
+
+#topics .container .theme img {
+  margin: 13px 108px;
+}
+
+#topics .container .theme h3 {
+  margin: 13px 16px 36px;
+  line-height: 1;
+}
+
+#topics .container .theme .bottom {
+  margin-bottom: 42px;
+}
+
+.bg-skew-2 {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -webkit-transform: skewY(-6deg);
+          transform: skewY(-6deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  width: 100%;
+  height: 400px;
+  position: absolute;
+}
+
+.news h2 {
+  position: relative;
+  background-color: transparent;
+  color: #FFFFFF;
+  margin: 64px 16px 36px;
+  text-align: center;
+}
+
+.news .button {
+  position: relative;
+  margin: 36px 16px 67px;
+}
+
+footer {
+  position: absolute;
+  bottom: -120px;
+  width: 100%;
+  height: 121px;
+  background-color: white;
+}
+
+footer .container p {
+  line-height: 22px;
+  margin: 24px 46px 16px 47px;
+}
+
+footer .container .social {
+  margin: 0 45px 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .social i {
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 28px;
 }
 /*# sourceMappingURL=styles.css.map */
