@@ -15,6 +15,7 @@
 
 html {
   line-height: 0;
+  scroll-behavior: smooth;
 }
 
 h2 {
@@ -38,7 +39,7 @@ h3 {
   min-height: 100%;
 }
 .container {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -47,7 +48,7 @@ h3 {
   line-height: 22px;
   text-align: center;
   font-weight: 500;
-  width: 288px;
+  width: 90%;
   height: 48px;
   background-color: $button-color-1;
 }
@@ -67,18 +68,18 @@ h3 {
   .logo {
     width: 24px;
     height: 24px;
-    margin: 10px 0 10px 16px;
+    margin: 10px 0 10px 5%;
   }
     .menu-wrapper {
       display: block;
-      padding: 16px 19px 16px 0;
+      padding: 16px 5.9375% 16px 0;
       #toggle {
         display: block;
         position: absolute;
         opacity: 0;
         width: 20px;
         height: 20px;
-        padding: 16px 19px 16px 0;
+        padding: 16px 5.9375% 16px 0;
         z-index: 2;
       }
       #toggle:checked~ul {
@@ -151,7 +152,8 @@ h3 {
     font-weight: normal;
     letter-spacing: 0;
     line-height: 42px;
-    margin: 29px 0 16px 16px;
+    margin: 29px 0 16px 5%;
+
     .line-through {
       text-decoration: line-through;
     }
@@ -164,11 +166,12 @@ h3 {
     }
   }
   p {
-    margin: 16px;
+    margin: 16px 5%;
     line-height: 22px;
   }
   .button {
-    margin: 20px 16px 24px 16px;
+    margin: 20px 5% 24px 5%;
+    flex-grow: 1;
   }
 }
 
@@ -178,15 +181,15 @@ h3 {
     h2 {
       position: relative;
       background-color: transparent;
-      z-index: 900;
       color: $font-color-2;
-      margin: 64px 147px 21px 16px;
+      margin: 20% 46% 21px 5%;
     }
     iframe {
       position: relative;
       background-color: transparent;
-      margin: 0 11px 11px 11px;
-      width: 298px;
+      margin: 0 3.4375% 3.4375% 3.4375%;
+      width: 93%;
+      max-width: 584px;
       height: 232px;
     }
   }
@@ -206,8 +209,7 @@ h3 {
 #about {
   .container {
     img {
-      width: 360px;
-      height: 519px;
+      width: 112.5%;
       position: relative;
       top: 37px;
       left: -20px;
@@ -216,13 +218,13 @@ h3 {
     }
     .about {
       h2 {
-      margin: 0px 16px 8px;
+      margin: 0px 5% 8px;
       padding-top: 27px;
       }
       p {
         letter-spacing: 0;
         line-height: 22px;
-        margin: 8px 16px 54px;
+        margin: 8px 5% 54px;
       }
     }
   }
@@ -232,11 +234,11 @@ h3 {
 #interviews {
   .container {
     h2 {
-      margin: 0 16px 14px;
+      margin: 0 5% 14px;
     }
     img {
-      width: 320px;
-      height: 243px;
+      width: 100%;
+      max-width: 480px;
     }
   }
 }
@@ -245,14 +247,15 @@ h3 {
 #topics {
   .container {
     h2 {
-      margin: 48px 16px 24px;
+      margin: 48px 5% 24px;
     }
     .theme {
+      text-align: center;
       img {
-        margin: 13px 108px;
+        margin: 13px auto;
       }
       h3 {
-        margin: 13px 16px 36px;
+        margin: 13px 5% 36px;
         line-height: 1;
       }
       .bottom {
@@ -278,12 +281,12 @@ h3 {
     position: relative;
     background-color: transparent;
     color: $font-color-2;
-    margin: 64px 16px 36px;
+    margin: 64px 5% 36px;
     text-align: center;
   }
   .button {
     position: relative;
-    margin: 36px 16px 67px;
+    margin: 36px 5% 67px;
   }
 }
 
@@ -297,10 +300,10 @@ footer {
   .container {
     p {
       line-height: 22px;
-      margin: 24px 46px 16px 47px;
+      margin: 24px 14.5% 16px 14.5%;
     }
     .social {
-      margin: 0 45px 31px;
+      margin: 0 14.5% 31px;
       display: flex;
       justify-content: space-between;
       i {
