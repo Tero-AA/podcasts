@@ -38,8 +38,10 @@ h3 {
   position: relative;
   min-height: 100%;
 }
+
 .container {
   width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -315,3 +317,58 @@ footer {
   }
 }
 
+// Media Queries
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+    .logo {
+      margin: 0 0 0 5.9375%;
+      a {
+        width: 36px;
+        height: 36px;
+        margin: 22px 0;
+        img {
+          width: 36px;
+          height: 36px;
+          margin: 22px 0;
+        }
+      }
+    }
+    .menu-wrapper {
+      padding: 0 5.9375% 0 0;
+      #toggle {
+        display: none;
+      }
+      .bar {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: auto;
+        height: 80px;
+        li {
+          background: $font-color-2;
+          margin: 0;
+          .nav-item {
+            color: $font-color-1;
+            font-size: 16px;
+            height: 28px;
+            padding: 26px 0 26px 48px;
+          }
+          .nav-item:hover {
+            text-decoration: line-through;
+            color: $button-color-1;
+          }
+          .nav-item:active {
+            text-decoration: line-through;
+            color: $font-color-act;
+          }
+        }
+      }
+    }
+  }
+}

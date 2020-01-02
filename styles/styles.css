@@ -38,6 +38,7 @@ h3 {
 
 .container {
   width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -335,5 +336,65 @@ footer .container .social i {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 28px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+  }
+  .navbar .logo {
+    margin: 0 0 0 5.9375%;
+  }
+  .navbar .logo a {
+    width: 36px;
+    height: 36px;
+    margin: 22px 0;
+  }
+  .navbar .logo a img {
+    width: 36px;
+    height: 36px;
+    margin: 22px 0;
+  }
+  .navbar .menu-wrapper {
+    padding: 0 5.9375% 0 0;
+  }
+  .navbar .menu-wrapper #toggle {
+    display: none;
+  }
+  .navbar .menu-wrapper .bar {
+    display: none;
+  }
+  .navbar .menu-wrapper .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 80px;
+  }
+  .navbar .menu-wrapper .menu li {
+    background: #FFFFFF;
+    margin: 0;
+  }
+  .navbar .menu-wrapper .menu li .nav-item {
+    color: #060A24;
+    font-size: 16px;
+    height: 28px;
+    padding: 26px 0 26px 48px;
+  }
+  .navbar .menu-wrapper .menu li .nav-item:hover {
+    text-decoration: line-through;
+    color: #00F3BB;
+  }
+  .navbar .menu-wrapper .menu li .nav-item:active {
+    text-decoration: line-through;
+    color: rgba(6, 10, 36, 0.56);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
