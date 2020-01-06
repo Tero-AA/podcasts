@@ -202,6 +202,10 @@ h3 {
   line-height: 22px;
 }
 
+#main .desktop-p {
+  display: none;
+}
+
 #main .button {
   margin: 20px 5% 24px 5%;
   -webkit-box-flex: 1;
@@ -221,7 +225,6 @@ h3 {
   background-color: transparent;
   margin: 0 3.4375% 3.4375% 3.4375%;
   width: 93%;
-  max-width: 584px;
   height: 232px;
 }
 
@@ -255,13 +258,22 @@ h3 {
   margin: 8px 5% 54px;
 }
 
-#interviews .container h2 {
+#interviews h2 {
   margin: 0 5% 14px;
 }
 
-#interviews .container img {
+#interviews img {
   width: 100%;
-  max-width: 480px;
+}
+
+#topics .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #topics .container h2 {
@@ -269,14 +281,17 @@ h3 {
 }
 
 #topics .container .theme {
+  position: relative;
   text-align: center;
 }
 
 #topics .container .theme img {
+  position: relative;
   margin: 13px auto;
 }
 
 #topics .container .theme h3 {
+  position: relative;
   margin: 13px 5% 36px;
   line-height: 1;
 }
@@ -289,8 +304,6 @@ h3 {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg);
-  -webkit-transform-origin: bottom left;
-          transform-origin: bottom left;
   width: 100%;
   height: 400px;
   position: absolute;
@@ -311,7 +324,7 @@ h3 {
 
 footer {
   position: absolute;
-  bottom: -120px;
+  bottom: -121px;
   width: 100%;
   height: 121px;
   background-color: white;
@@ -338,12 +351,18 @@ footer .container .social i {
   line-height: 28px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1240px) {
+  * {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 48px;
+  }
   .navbar {
     height: 80px;
   }
   .navbar .logo {
-    margin: 0 0 0 5.9375%;
+    margin-left: 5px;
   }
   .navbar .logo a {
     width: 36px;
@@ -356,7 +375,7 @@ footer .container .social i {
     margin: 22px 0;
   }
   .navbar .menu-wrapper {
-    padding: 0 5.9375% 0 0;
+    padding: 0;
   }
   .navbar .menu-wrapper #toggle {
     display: none;
@@ -395,6 +414,182 @@ footer .container .social i {
   .navbar .menu-wrapper .menu li .nav-item:active {
     text-decoration: line-through;
     color: rgba(6, 10, 36, 0.56);
+  }
+  #main {
+    margin-left: 100px;
+  }
+  #main h1 {
+    font-size: 64px;
+    margin-top: 120px;
+  }
+  #main h1 .line-through {
+    font-size: 64px;
+  }
+  #main h1 .second-line {
+    font-size: 64px;
+    display: inline;
+  }
+  #main h1 .dot {
+    font-size: 64px;
+    color: #0000EC;
+  }
+  #main .desktop-p {
+    display: block;
+    width: 628px;
+  }
+  #main p {
+    display: none;
+  }
+  #main .button {
+    margin-top: 56px;
+    margin-bottom: 5px;
+    width: 226px;
+    height: 56px;
+  }
+  .bg-skew {
+    top: 515px;
+    height: 950px;
+  }
+  #episodes .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #episodes .container h2 {
+    margin: 186px 0 26px 100px;
+  }
+  #episodes .container .episodes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #episodes .container .episodes iframe {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    width: 584px;
+    margin: 0 0 72px 0;
+    padding: 0;
+  }
+  #episodes .container .episodes .second {
+    margin-left: 62px;
+  }
+  #about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #about .container img {
+    width: 457.6px;
+    margin-left: 100px;
+  }
+  #about .container .about {
+    margin-top: 228px;
+  }
+  #about .container .about h2 .line {
+    display: none;
+  }
+  #about .container .about p {
+    width: 464px;
+    margin-top: 24px;
+  }
+  #interviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #interviews h2 {
+    margin: 64px 0 36px 100px;
+  }
+  #interviews .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #interviews .images img {
+    width: 33.33%;
+  }
+  #topics .container .topics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #topics .container .topics .theme {
+    width: 260px;
+    text-align: center;
+    margin: 50px 0 34px;
+  }
+  .news .container h2 {
+    margin: 213px 274px 36px 274px;
+  }
+  .news .container h2 .second-line {
+    display: none;
+  }
+  .news .container .button {
+    width: 345px;
+    height: 56px;
+    margin: 0 447px 151px 447px;
+  }
+  .bg-skew-2 {
+    height: 518px;
+    top: 89%;
+  }
+  footer {
+    bottom: -300px;
+    height: 95px;
+  }
+  footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer .container p {
+    margin: 36px 0 31px 0;
+  }
+  footer .container .social {
+    margin: 36px 0 31px 720px;
+    width: 232px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .container .social i {
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
