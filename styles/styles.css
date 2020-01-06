@@ -351,6 +351,103 @@ footer .container .social i {
   line-height: 28px;
 }
 
+@media (min-width: 768px) {
+  #main .button {
+    width: 226px;
+  }
+  .bg-skew {
+    height: 800px;
+  }
+  #episodes .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #episodes .container .episodes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #episodes .container .episodes iframe {
+    width: 42.5%;
+  }
+  #about .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #about .container img {
+    width: 350px;
+    margin-left: 50px;
+  }
+  #about .container .about {
+    margin-top: 150px;
+  }
+  #about .container .about h2 .line {
+    display: none;
+  }
+  #about .container .about p {
+    width: 300px;
+  }
+  #interviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #interviews h2 {
+    margin-top: 42px;
+  }
+  #interviews .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #interviews .images img {
+    width: 50%;
+  }
+  #topics .container .topics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #topics .container .topics .theme {
+    width: 33%;
+  }
+  .news .container .button {
+    width: 30%;
+    margin: 36px 35% 67px;
+  }
+}
+
 @media (min-width: 1240px) {
   * {
     font-size: 16px;
@@ -443,33 +540,14 @@ footer .container .social i {
   #main .button {
     margin-top: 56px;
     margin-bottom: 5px;
-    width: 226px;
     height: 56px;
   }
   .bg-skew {
     top: 515px;
     height: 950px;
   }
-  #episodes .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   #episodes .container h2 {
     margin: 186px 0 26px 100px;
-  }
-  #episodes .container .episodes {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   #episodes .container .episodes iframe {
     -webkit-box-flex: 1;
@@ -481,15 +559,6 @@ footer .container .social i {
   }
   #episodes .container .episodes .second {
     margin-left: 62px;
-  }
-  #about .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   #about .container img {
     width: 457.6px;
@@ -505,26 +574,8 @@ footer .container .social i {
     width: 464px;
     margin-top: 24px;
   }
-  #interviews {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   #interviews h2 {
     margin: 64px 0 36px 100px;
-  }
-  #interviews .images {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
   }
   #interviews .images img {
     width: 33.33%;

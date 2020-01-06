@@ -322,6 +322,92 @@ footer {
 }
 
 // Media Queries
+@media (min-width: 768px) {
+  #main {
+    .button {
+      width: 226px;
+    }
+  }
+
+  .bg-skew {
+    height: 800px;
+  }
+
+  #episodes {
+    .container {
+      display: flex;
+      flex-direction: column;
+      .episodes {
+        flex-direction: row;
+        justify-content: space-between;
+        iframe {
+          width: 42.5%;
+        }
+      }
+    }
+  }
+
+  #about {
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      img {
+        width: 350px;
+        margin-left: 50px;
+      }
+      .about {
+        margin-top: 150px;
+        h2 {
+          .line {
+            display: none;
+          }
+        }
+        p {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  #interviews {
+    display: flex;
+    flex-direction: column;
+    h2 {
+      margin-top: 42px;
+    }
+    .images {
+      display: flex;
+      flex-flow: row wrap;
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  #topics {
+    .container {
+      .topics {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        .theme {
+          width: 33%;
+        }
+      }
+    }
+  }
+
+  .news {
+    .container {
+      .button {
+        width: 30%;
+        margin: 36px 35% 67px;
+      }
+    }
+  }
+}
+
 @media (min-width: 1240px) {
   * {
     font-size: 16px;
@@ -411,7 +497,6 @@ footer {
     .button {
       margin-top: 56px;
       margin-bottom: 5px;
-      width: 226px;
       height: 56px;
     }
   }
@@ -423,14 +508,10 @@ footer {
 
   #episodes {
     .container {
-      display: flex;
-      flex-direction: column;
       h2 {
         margin: 186px 0 26px 100px;
       }
       .episodes {
-        flex-direction: row;
-        justify-content: space-between;
         iframe {
           flex-grow: 1;
           width: 584px;
@@ -446,8 +527,6 @@ footer {
 
   #about {
     .container {
-      display: flex;
-      flex-direction: row;
       img {
         width: 457.6px;
         margin-left: 100px;
@@ -468,15 +547,10 @@ footer {
   }
 
   #interviews {
-    display: flex;
-    flex-direction: column;
-
     h2 {
       margin: 64px 0 36px 100px;
     }
     .images {
-      display: flex;
-      flex-flow: row wrap;
       img {
         width: 33.33%;
       }
