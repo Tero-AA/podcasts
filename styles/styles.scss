@@ -46,6 +46,9 @@ h3 {
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -53,9 +56,7 @@ h3 {
   width: 90%;
   height: 48px;
   background-color: $button-color-1;
-  a {
-    text-decoration: none;
-  }
+  text-decoration: none;
 }
 
 .button:hover{
@@ -178,7 +179,8 @@ h3 {
     display: none;
   }
   .button {
-    margin: 20px 5% 24px 5%;
+    position: relative;
+    margin: 20px 5% 24px;
     flex-grow: 1;
   }
 }
@@ -186,11 +188,12 @@ h3 {
 // episodes
 #episodes{
   .container{
+    padding-top: 20%;
     h2 {
       position: relative;
       background-color: transparent;
       color: $font-color-2;
-      margin: 20% 46% 21px 5%;
+      margin: 0% 46% 21px 5%;
     }
     iframe {
       position: relative;
@@ -301,15 +304,16 @@ h3 {
 
 // footer
 footer {
-  position: absolute;
-  bottom: -121px;
+  position: relative;
+  bottom: 0px;
   width: 100%;
   height: 121px;
   background-color: white;
   .container {
+    padding-top: 24px;
     p {
       line-height: 22px;
-      margin: 24px 14.5% 16px 14.5%;
+      margin: 0px 14.5% 16px 14.5%;
     }
     .social {
       margin: 0 14.5% 31px;
@@ -408,6 +412,10 @@ footer {
         margin: 36px 35% 67px;
       }
     }
+  }
+
+  footer {
+    bottom: -30px;
   }
 }
 
@@ -593,11 +601,11 @@ footer {
 
   .bg-skew-2 {
     height: 518px;
-    top: 89%;
+    top: 87%;
   }
 
   footer {
-    bottom: -170px;
+    bottom: -36px;
     height: 175px;
     .container {
       display: flex;

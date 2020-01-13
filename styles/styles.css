@@ -43,6 +43,15 @@ h3 {
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
@@ -50,9 +59,6 @@ h3 {
   width: 90%;
   height: 48px;
   background-color: #00F3BB;
-}
-
-.button a {
   text-decoration: none;
 }
 
@@ -211,17 +217,22 @@ h3 {
 }
 
 #main .button {
-  margin: 20px 5% 24px 5%;
+  position: relative;
+  margin: 20px 5% 24px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+#episodes .container {
+  padding-top: 20%;
 }
 
 #episodes .container h2 {
   position: relative;
   background-color: transparent;
   color: #FFFFFF;
-  margin: 20% 46% 21px 5%;
+  margin: 0% 46% 21px 5%;
 }
 
 #episodes .container iframe {
@@ -327,16 +338,20 @@ h3 {
 }
 
 footer {
-  position: absolute;
-  bottom: -121px;
+  position: relative;
+  bottom: 0px;
   width: 100%;
   height: 121px;
   background-color: white;
 }
 
+footer .container {
+  padding-top: 24px;
+}
+
 footer .container p {
   line-height: 22px;
-  margin: 24px 14.5% 16px 14.5%;
+  margin: 0px 14.5% 16px 14.5%;
 }
 
 footer .container .social {
@@ -449,6 +464,9 @@ footer .container .social i {
   .news .container .button {
     width: 30%;
     margin: 36px 35% 67px;
+  }
+  footer {
+    bottom: -30px;
   }
 }
 
@@ -614,10 +632,10 @@ footer .container .social i {
   }
   .bg-skew-2 {
     height: 518px;
-    top: 89%;
+    top: 87%;
   }
   footer {
-    bottom: -170px;
+    bottom: -36px;
     height: 175px;
   }
   footer .container {
