@@ -568,6 +568,9 @@ footer .container .social i {
     top: 515px;
     height: 950px;
   }
+  #episodes .container {
+    padding-top: 48px;
+  }
   #episodes .container h2 {
     margin: 186px 0 26px 100px;
   }
@@ -635,7 +638,7 @@ footer .container .social i {
     top: 87%;
   }
   footer {
-    bottom: -36px;
+    bottom: -75px;
     height: 175px;
   }
   footer .container {

@@ -519,6 +519,7 @@ footer {
 
   #episodes {
     .container {
+      padding-top: 48px;
       h2 {
         margin: 186px 0 26px 100px;
       }
@@ -605,7 +606,7 @@ footer {
   }
 
   footer {
-    bottom: -36px;
+    bottom: -75px;
     height: 175px;
     .container {
       display: flex;
